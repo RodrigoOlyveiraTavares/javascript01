@@ -15,12 +15,22 @@
 </head>
 <body>
     <h1>começando no Javascrypt</h1>
-    <p>Olá Mundo</p>
-    
+    <p>Nesses primeiros passos nós vamos ver algum comando. <br>
+        antes de chegar nesse conteudo voce viu algumas janelas. Elas são window e vimos tres janelas: <br>
+        <strong>window.prompt</strong> = nessa janela vode pode digitar algo. <br>
+        <strong>window.alert</strong> = que serve so para exibir uma mensagem <br>
+        <strong>window.confirm</strong> = como o propio nome indica é para confirmar algo.
+    </p>
+    <p>
+        Vamos continuar os estudos, agora sobre <a href="tpvar.html">variaveis</a>
+    </p>
 
 </body>
 <script>
-   var nome = window.prompt("Qual é o seu nome?")
-   window.alert("seja bem vindo" +nome+ "!!!" )
+   var n1 = Number(window.prompt("digite um numero?"))
+   var n2 = Number(window.prompt("digite outro"))
+   window.confirm("etá gostando do curso?")
+   var soma = n1 + n2
+   window.alert("resultado da soma é " + soma )
 </script>
 </html>
