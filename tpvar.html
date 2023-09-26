@@ -40,11 +40,30 @@
         ex:` Texo desejado ${variavelString} segue o texto`
     </p>
     
-        <h2>comandos do java</h2>
+        <h2>Manipulando strings</h2>
     <p>
+        <p>
+            aqui está alguns comandos para iniciarmos nossos estudos em manipulação das strings
+        </p>
  <strong>VARIAVEL.length</strong> esse atributo serve para identificar o numero de caracteres da string <br>
  <strong>VARIAVEL.toUpperCase()</strong> esse atributo é para colocar todos os caracteres para maiusculo <br>
  <strong>VARIAVEL.toLowerCase()</strong> esse atributo é para colocar todos os caracteres em menusculo
+    </p>
+    <h2>Manipulação de numeros(Number)</h2>
+    <p>
+        Já vimos alguns comandos de manipulação de numeros como: como transformar um numero inteiro em real e ao contrario <br>
+        com os comando VARIAVE.passInt e VARIAVEL.passfloat , para coonverter para interiro e para real respectivamente.
+    </p>
+    <p>
+        agora vamos  ver mais alguns ccomandos para manipulação das variaveis numericas. <br>
+        VARIAVEL.toFixed(X) = para determinar a quantidade de casa descimal após a virgula, o X entre <br>
+        parenteses é a quantidade de numeros que sucederá após a virgula. 
+    </p>
+    <p>
+        tambem vamos ver o comando <strong>VARIAVEL.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})</strong> <br>
+        esse atributo é para localizar a regiaão da variavem como no caso <br>
+        moeda do país, poderiamos usa USD para dolar, EUR para euro e assim por diante<br>
+
     </p>
     <footer>
         <p><a href="index.html">pag1</a> <a href="tpvar.html">pag2</a></p>
@@ -52,6 +71,9 @@
 
 </body>
 <script>
-
+    var nome = window.prompt("Qual é o seu nome?");
+    document.write(`Ola! <strong>${nome}</strong> seu nome tem ${nome.length} letras<br/>`)
+    document.write(`seu nome em maiusculo fica ${nome.toUpperCase()}<br/>`)
+    document.write(`E seu nome em menusculo fica ${nome.toLowerCase()}`)
 </script>
 </html>
